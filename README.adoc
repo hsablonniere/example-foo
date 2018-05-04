@@ -1,0 +1,3 @@
+= example-foo
+
+WIP site that goes with https://cookies.rocks to show off HTTP cookies behaviour and usage for online tracking.
