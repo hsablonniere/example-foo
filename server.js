@@ -13,4 +13,4 @@ app.use(express.static('public', {
   lastModified: false,
 }));
 
-app.listen(8080);
+app.listen(process.env.PORT);
