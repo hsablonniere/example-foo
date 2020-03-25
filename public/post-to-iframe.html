@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>POST to iframe</title>
+  <style>
+  body {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: auto;
+    max-width: 40em;
+    padding: 1em;
+  }
+
+  label, input {
+    display: block;
+    margin: 1em 0;
+  }
+
+  footer {
+    font-style: italic;
+    margin-top: 10em;
+  }
+  </style>
+</head>
+<body>
+<h1><a href="/">Example foo</a></h1>
+
+<form target="the-iframe" action="//cookies.rocks/test-post-samesite.html" method="POST">
+  <input type="text" name="token" value="the-token">
+  <input type="submit" value="Submit">
+</form>
+<iframe name="the-iframe"></iframe>
+<footer>
+  A project related to <a href="http://cookies.rocks">cookies.rocks</a> and developed by
+  <a href="https://twitter.com/hsablonniere" target="_blank">@hsablonniere</a>.
+  Hosted on <a href="http://www.clever-cloud.com/">Clever Cloud</a>.
+  Sources on <a href="https://github.com/hsablonniere/cookies.rocks" target="_blank">Github</a>.
+</footer>
+</body>
+</html>
